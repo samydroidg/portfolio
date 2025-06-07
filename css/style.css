@@ -1,41 +1,58 @@
 body{
+    margin: 0;
+    padding: 0;
     background-color: #000;
     color: #0f0;
     font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
 .container{
-    text-align: center;
-    border: 2px solid #0f0;
+    display: flex;
+    flex-wrap: wrap;
     padding: 40px;
-    border-radius: 15px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-box, .right-box{
+    flex: 1 1 300px;
+    max-width: 500px;
     background-color: #111;
-    box-shadow: 0 0 20px #0f0;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #333;
+    box-shadow: 0 0 20px #444;
+    text-align: center;
 }
 
 .profile-pic{
     width: 120px;
     border-radius: 50%;
     border: 2px solid #0f0;
-    margin-bottom: 20px;
-    box-shadow: 0 0 20px #0f0, 0 0 40px #0f0;
+    box-shadow: 0 0 20px #0f0, 0 0 40px #333;
 }
 
-h1{
-    font-size: 2rem;
+h1, h2{
     color: #0f0;
-    text-shadow: 0 0 2px #0f0, 0 0 40px rgb(0, 138, 0);
-    text-wrap-style: stable;
-    animation: flicker 2s infinite;
+    text-shadow: 0 0 1px #0f0, 0 0 20px #333;
+}
+
+.tagline{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.bio{
+    margin-top: 10px;
 }
 
 .buttons{
     margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn{
@@ -54,6 +71,11 @@ h1{
     color: #0f0;
     border: 2px solid #0f0;
     box-shadow: 0 0 15px #0f0;
+}
+
+ul{
+    text-align: left;
+    padding-left: 20px;
 }
 
 @keyframes flicker {
