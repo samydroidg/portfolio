@@ -1,0 +1,66 @@
+body{
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+    border: 2px solid #0f0;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #111;
+    box-shadow: 0 0 20px #0f0;
+}
+
+.profile-pic{
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid #0f0;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px #0f0, 0 0 40px #0f0;
+}
+
+h1{
+    font-size: 2rem;
+    color: #0f0;
+    text-shadow: 0 0 2px #0f0, 0 0 40px rgb(0, 138, 0);
+    text-wrap-style: stable;
+    animation: flicker 2s infinite;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+.btn{
+    text-decoration: none;
+    color: #000;
+    background-color: #0f0;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: #000;
+    color: #0f0;
+    border: 2px solid #0f0;
+    box-shadow: 0 0 15px #0f0;
+}
+
+@keyframes flicker {
+    0%, 18%, 25%, 41%, 53%, 57%, 100%{
+        text-shadow: 0 0 1px #0f0, 0 0 45px #0f0, 0 0 90px #0f0;
+    }
+    12%, 20%, 35%, 55%, 87%{
+        text-shadow: none;
+    }
+}
