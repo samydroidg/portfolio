@@ -6,6 +6,56 @@ body{
     font-family: 'Arial', sans-serif;
 }
 
+body.light-mode{
+    background-color: #f0f0f0;
+    color: #0f0;
+}
+
+body.light-mode .btn{
+    background-color: #111;
+    color: #0f0;
+    border: 2px solid #0f0;
+    box-shadow: 0 0 5px #111;
+}
+
+body.light-mode .btn:hover{
+    background-color: #0f0;
+    color: #000;
+}
+
+body.light-mode .left-box, body.light-mode .right-box{
+    background-color: #c0c0c0;
+}
+
+body.light-mode .tagline{
+    color: #000;
+}
+
+body.light-mode .bio{
+    color: #000;
+}
+
+body.light-mode .right-box ul{
+    color: #000;
+}
+
+body.light-mode .cursor-dot{
+    background: #777;
+}
+
+.top-right{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.top-right .btn{
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -78,15 +128,6 @@ ul{
     padding-left: 20px;
 }
 
-@keyframes flicker {
-    0%, 18%, 25%, 41%, 53%, 57%, 100%{
-        text-shadow: 0 0 1px #0f0, 0 0 45px #0f0, 0 0 90px #0f0;
-    }
-    12%, 20%, 35%, 55%, 87%{
-        text-shadow: none;
-    }
-}
-
 .fade-in{
     opacity: 0;
     transform: translateY(30px);
@@ -96,4 +137,14 @@ ul{
 .fade-in.visible{
     opacity: 1;
     transform: translateY(0);
+}
+
+.cursor-dot{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #0f0;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
 }
