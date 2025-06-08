@@ -9,38 +9,65 @@ body{
 body.light-mode{
     background-color: #f0f0f0;
     color: #0f0;
-}
 
-body.light-mode .btn{
-    background-color: #111;
-    color: #0f0;
-    border: 2px solid #0f0;
-    box-shadow: 0 0 5px #111;
-}
+    .btn{
+        background-color: #111;
+        color: #0f0;
+        border: 2px solid #0f0;
+        box-shadow: 0 0 5px #111;
+    }
 
-body.light-mode .btn:hover{
-    background-color: #0f0;
-    color: #000;
-}
+    .btn:hover{
+        background-color: #0f0;
+        color: #000;
+    }
 
-body.light-mode .left-box, body.light-mode .right-box{
-    background-color: #c0c0c0;
-}
+    .left-box, .right-box{
+        background-color: #c0c0c0;
+    }
 
-body.light-mode .tagline{
-    color: #000;
-}
+    .tagline{
+        color: #000;
+    }
 
-body.light-mode .bio{
-    color: #000;
-}
+    .bio{
+        color: #000;
+    }
 
-body.light-mode .right-box ul{
-    color: #000;
-}
+    .right-box ul{
+        color: #000;
+    }
 
-body.light-mode .cursor-dot{
-    background: #777;
+    .cursor-dot{
+        background: #777;
+    }
+
+    #projects{
+        background: #e9e9e9;
+        box-shadow: 0 0 12px #777;
+    }
+
+    #projects > h2{
+        color: #111;
+    }
+
+    .project-card{
+        background: #c0c0c0;
+        color: #333;
+    }
+
+    .project-card a{
+        color: #111;
+    }
+
+    #contact{
+        box-shadow: 0 0 15px #333;
+        background-color: #e9e9e9;
+    }
+
+    #contact h2{
+        color: #222;
+    }
 }
 
 .top-right{
@@ -147,4 +174,63 @@ ul{
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
+}
+
+#projects{
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project-card{
+    background: #111;
+    color: #0f0;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3;
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #0f0;
+}
+
+.project-card a{
+    color: #0f0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+#contact-form input, #contact-form textarea{
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #222;
+    color: #0f0;
+}
+
+#contact-form textarea{
+    min-height: 100px;
+    resize: vertical;
 }
